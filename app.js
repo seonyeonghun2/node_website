@@ -35,7 +35,7 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-app.post("/contactProc", procRouter);
+app.use("/contactProc", procRouter);
 
 app.listen(port, () => {
   console.log(`server is running on port ${port}`);
